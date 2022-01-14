@@ -1941,6 +1941,12 @@ img {
   color: #fff;
 }
 
+.paragraph-color.diy-video-label {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
 .div-block-26 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2832,6 +2838,29 @@ img {
 
 .image-20 {
   display: inline-block;
+}
+
+.diy-div {
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.diy-videos-div {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-areas: "Szatyor Szilvia"
+    "Ekszer Amoba";
+  -ms-grid-columns: 1fr 16px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto 16px auto;
+  grid-template-rows: auto auto;
 }
 
 @media screen and (max-width: 991px) {
@@ -3883,6 +3912,18 @@ img {
   .div-block-58 {
     display: block;
   }
+
+  .diy-videos-div {
+    grid-auto-flow: row;
+    grid-template-areas: "Szatyor"
+      "Szilvia"
+      "Ekszer"
+      "Amoba";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
 }
 
 #w-node-_8f8d9c20-5a42-8119-b42b-7826a5362bca-b593f6a8 {
@@ -4065,6 +4106,52 @@ img {
   grid-row-start: span 1;
   -ms-grid-column-span: 1;
   grid-column-end: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_7b7f70fb-6612-8cff-1ba2-967c8aec00dc-7bd6a568 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Szatyor;
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-_7b7f70fb-6612-8cff-1ba2-967c8aec00dc-7bd6a568 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+
+#w-node-f552ecd4-dc95-e13b-9444-ce3f70f7ab46-7bd6a568 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_9c679b62-5809-6d77-21a6-e676cc852123-7bd6a568 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_2afb5352-df2b-3698-059c-e4b1d7bbbd6a-7bd6a568 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
   -ms-grid-row-span: 1;
   grid-row-end: span 1;
 }
